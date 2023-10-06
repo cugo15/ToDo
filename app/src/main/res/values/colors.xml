@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    #DBEAFF
+    <color name="background">#DBEAFF</color>
+    <color name="inprogress">#FFE3CD</color>
+    <color name="completed">#D9F2DC</color>
+
+    <color name="highpriority">#DD4D4D</color>
+    <color name="mediumpriority">#F3AA6D</color>
+    <color name="lowpriority">#6FC276</color>
+
+    <color name="home">#f5f591</color>
+    <color name="personal">#86c8e9</color>
+    <color name="other">#c4a484</color>
+    <color name="work">#a39edc</color>
+
+
+</resources>

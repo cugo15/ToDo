@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cumhurcugogunay.todo.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/homeToCreate"
+            app:destination="@id/addToDoFragment" />
+        <action
+            android:id="@+id/homeToDetails"
+            app:destination="@id/detailsToDoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addToDoFragment"
+        android:name="com.cumhurcugogunay.todo.ui.fragment.AddToDoFragment"
+        android:label="fragment_add_to_do"
+        tools:layout="@layout/fragment_add_to_do" >
+        <action
+            android:id="@+id/createToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsToDoFragment"
+        android:name="com.cumhurcugogunay.todo.ui.fragment.DetailsToDoFragment"
+        android:label="fragment_details_to_do"
+        tools:layout="@layout/fragment_details_to_do" >
+        <argument
+            android:name="todo"
+            app:argType="com.cumhurcugogunay.todo.data.entity.ToDos" />
+        <action
+            android:id="@+id/detailsToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
